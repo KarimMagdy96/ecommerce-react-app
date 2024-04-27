@@ -1,0 +1,21 @@
+.navbar .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.navbar ul {
+  display: flex;
+  justify-content: center;
+  gap: 3.06rem;
+}
+.navbar a {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 1.25rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  text-transform: uppercase;
+}
+.navbar a.active {
+  color: red;
+}/*# sourceMappingURL=navbar.css.map */

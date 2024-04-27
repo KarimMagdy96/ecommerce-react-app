@@ -1,0 +1,97 @@
+.navbar {
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-inline: calc(2.5rem + 1.63rem);
+    padding-block-start: calc(3.12rem + 1.56rem);
+  }
+  ul {
+    display: flex;
+    justify-content: center;
+    gap: 3.06rem;
+
+    a {
+      color: rgba(255, 255, 255, 0.5);
+      font-size: 1.25rem;
+      font-style: normal;
+      font-weight: 500;
+      line-height: normal;
+      text-transform: uppercase;
+      position: relative;
+      display: inline-block;
+      transition: 0.3s ease-in-out;
+      &:hover {
+        color: $white-color;
+      }
+      &.active {
+        color: $white-color;
+        &::after {
+          content: "";
+          width: 100%;
+          height: 3px;
+          background-color: $white-color;
+          position: absolute;
+          bottom: 0;
+          left: 0;
+        }
+      }
+      &::after {
+        content: "";
+        width: 0%;
+        height: 3px;
+        background-color: $white-color;
+        position: absolute;
+        bottom: 0;
+        transition: 0.3s ease-in-out;
+        left: 0;
+      }
+      &:hover::after {
+        width: 100%;
+      }
+    }
+  }
+  .nav--icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    .nav--icon {
+      width: 2.5rem;
+      height: 2.5rem;
+      border: 1px solid $white-color;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+      position: relative;
+      font-size: 1.2rem;
+      span {
+        position: absolute;
+        content: "";
+        right: -1rem;
+        top: -25%;
+        background: #d62828;
+        border-radius: 50%;
+        padding: 0rem 0.4375rem 0.0625rem 0.4375rem;
+        font-size: 0.9rem;
+        width: 1.5rem;
+        height: 1.5rem;
+        font-weight: 500;
+        line-height: normal;
+        text-transform: uppercase;
+        text-align: center;
+      }
+      transition: 0.4s ease-in-out;
+      &:hover {
+        background-color: $main-color;
+        border-color: transparent;
+      }
+    }
+    .nav--baricon {
+      display: flex;
+      align-items: center;
+    }
+  }
+}
