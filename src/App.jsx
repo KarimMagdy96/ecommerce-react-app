@@ -7,8 +7,12 @@ import { Shop } from "./pages/shop/Shop";
 import { Contact } from "./pages/contact/Contact";
 import { WishList } from "./pages/wishList/WishList";
 import { Cart } from "./pages/cart/Cart";
-import { MobileHandlerProvider } from "./utils/mobilHundler";
+import {
+  MobileHandlerContext,
+  MobileHandlerProvider,
+} from "./utils/mobilHundler";
 import { MobileMenu } from "./components/mobilMenu/MobileMenu";
+import { useContext } from "react";
 
 function App() {
   const Routing = createBrowserRouter([
@@ -43,6 +47,7 @@ function App() {
       ],
     },
   ]);
+
   return (
     <>
       <MobileHandlerProvider>
