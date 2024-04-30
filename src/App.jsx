@@ -8,6 +8,7 @@ import { Contact } from "./pages/contact/Contact";
 import { WishList } from "./pages/wishList/WishList";
 import { Cart } from "./pages/cart/Cart";
 import { MobileHandlerProvider } from "./utils/mobilHundler";
+import { MobileMenu } from "./components/mobilMenu/MobileMenu";
 
 function App() {
   const Routing = createBrowserRouter([
@@ -45,6 +46,7 @@ function App() {
   return (
     <>
       <MobileHandlerProvider>
+        <MobileMenu />
         <RouterProvider router={Routing} />
       </MobileHandlerProvider>
     </>
