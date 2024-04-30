@@ -7,9 +7,10 @@ import { Shop } from "./pages/shop/Shop";
 import { Contact } from "./pages/contact/Contact";
 import { WishList } from "./pages/wishList/WishList";
 import { Cart } from "./pages/cart/Cart";
+import { MobileHandlerProvider } from "./utils/mobilHundler";
 
 function App() {
-  const router = createBrowserRouter([
+  const Routing = createBrowserRouter([
     {
       path: "/",
       element: <Layout />,
@@ -43,9 +44,9 @@ function App() {
   ]);
   return (
     <>
-      <mobilHandlerProvider>
-        <RouterProvider router={router} />
-      </mobilHandlerProvider>
+      <MobileHandlerProvider>
+        <RouterProvider router={Routing} />
+      </MobileHandlerProvider>
     </>
   );
 }

@@ -1,9 +1,12 @@
-import React from "react";
+import React, { useContext } from "react";
 import { NavLink } from "react-router-dom";
 import { FaHeart } from "react-icons/fa";
 import { AiOutlineShoppingCart } from "react-icons/ai";
+import { MobileHandlerContext } from "../../utils/mobilHundler";
 
 export const Navbar = () => {
+  const { isMobile } = useContext(MobileHandlerContext);
+
   return (
     <nav className="navbar">
       <div className="container">
@@ -25,10 +28,12 @@ export const Navbar = () => {
             <span>0</span>
             <AiOutlineShoppingCart />
           </div>
-          <div className="nav--baricon">
-            <div></div>
-            <div></div>
-          </div>
+          {isMobile && (
+            <div className="nav--baricon menu-open">
+              <div></div>
+              <div></div>
+            </div>
+          )}
         </div>
       </div>
     </nav>
