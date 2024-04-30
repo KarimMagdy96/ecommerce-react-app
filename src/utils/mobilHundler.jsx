@@ -4,6 +4,7 @@ const MobileHandlerContext = createContext();
 
 function MobileHandlerProvider({ children }) {
   const [isMobile, setIsMobile] = useState();
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const isMobileHandler = (e) => {
     setIsMobile(e.matches);
@@ -17,7 +18,9 @@ function MobileHandlerProvider({ children }) {
   }, []);
 
   return (
-    <MobileHandlerContext.Provider value={{ isMobile }}>
+    <MobileHandlerContext.Provider
+      value={{ isMobile, isMenuOpen, setIsMenuOpen }}
+    >
       {children}
     </MobileHandlerContext.Provider>
   );

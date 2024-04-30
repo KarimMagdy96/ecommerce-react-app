@@ -3,9 +3,9 @@ import { NavLink } from "react-router-dom";
 import { FaHeart } from "react-icons/fa";
 import { AiOutlineShoppingCart } from "react-icons/ai";
 import { MobileHandlerContext } from "../../utils/mobilHundler";
-
 export const Navbar = () => {
-  const { isMobile } = useContext(MobileHandlerContext);
+  const { isMobile, isMenuOpen, setIsMenuOpen } =
+    useContext(MobileHandlerContext);
 
   return (
     <nav className="navbar">
@@ -28,13 +28,17 @@ export const Navbar = () => {
             <span>0</span>
             <AiOutlineShoppingCart />
           </div>
-          {isMobile && (
-            <div className="nav--baricon menu-open">
-              <div></div>
-              <div></div>
-            </div>
-          )}
         </div>
+        {isMobile && (
+          // menu-open
+          <div
+            className={`nav--baricon ${isMenuOpen ? " menu-open" : ""}`}
+            onClick={() => setIsMenuOpen(!isMenuOpen)}
+          >
+            <div></div>
+            <div></div>
+          </div>
+        )}
       </div>
     </nav>
   );
