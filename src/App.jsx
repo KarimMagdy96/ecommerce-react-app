@@ -51,7 +51,6 @@ function App() {
   return (
     <>
       <MobileHandlerProvider>
-        <MobileMenu />
         <RouterProvider router={Routing} />
       </MobileHandlerProvider>
     </>
