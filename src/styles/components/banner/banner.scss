@@ -1,0 +1,118 @@
+.banner {
+  padding: 1.56rem 1.6rem 0 1.6rem;
+  .hero-banner {
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.8) 0%,
+        rgba(0, 0, 0, 0.8) 100%
+      ),
+      url("../../../../public/images/banner.webp");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    border-radius: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .hero--content {
+      text-align: center;
+      .content {
+        width: 70%;
+        margin: auto;
+        h2 {
+          margin-bottom: 1.56rem;
+          font-size: 5rem;
+          font-weight: 700;
+        }
+        p {
+          font-size: 1.25rem;
+          font-weight: 500;
+          width: 70%;
+          margin: auto;
+        }
+      }
+      .btn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 1rem 2.625rem;
+        border-radius: 1.625rem;
+        background-color: $main-color;
+        width: fit-content;
+        margin: auto;
+        margin-top: 3.25rem;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .banner {
+    .hero-banner {
+      .hero--content {
+        .content {
+          width: 90%;
+          h2 {
+            font-size: 3.5rem;
+          }
+          p {
+            font-size: 1rem;
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 1300px) {
+  .banner {
+    .hero-banner {
+      .hero--content {
+        .content {
+          h2 {
+            font-size: 4rem;
+          }
+          p {
+            font-size: 1.1rem;
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 800px) {
+  .banner {
+    .hero-banner {
+      .hero--content {
+        .content {
+          width: 100%;
+          h2 {
+            font-size: 3rem;
+          }
+          p {
+            font-size: 0.9rem;
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 450px) {
+  .banner {
+    .hero-banner {
+      .hero--content {
+        .content {
+          width: 100%;
+          h2 {
+            font-size: 2.3rem;
+          }
+          p {
+            font-size: 0.75rem;
+            width: 95%;
+          }
+        }
+      }
+    }
+  }
+}

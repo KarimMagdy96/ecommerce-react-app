@@ -1,0 +1,44 @@
+.banner {
+  padding: 1.56rem 1.6rem 0 1.6rem;
+}
+.banner .hero-banner {
+  width: 100%;
+  min-height: 100vh;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.8) 100%), url("../../../../public/images/banner.webp");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  border-radius: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.banner .hero-banner .hero--content {
+  text-align: center;
+}
+.banner .hero-banner .hero--content .content {
+  width: 70%;
+  margin: auto;
+}
+.banner .hero-banner .hero--content .content h2 {
+  margin-bottom: 1.56rem;
+  font-size: 6rem;
+  font-weight: 700;
+}
+.banner .hero-banner .hero--content .content p {
+  font-size: 1.25rem;
+  font-weight: 500;
+  width: 70%;
+  margin: auto;
+}
+.banner .hero-banner .hero--content .btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem 2.625rem;
+  border-radius: 1.625rem;
+  background-color: red;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: auto;
+}/*# sourceMappingURL=banner.css.map */
