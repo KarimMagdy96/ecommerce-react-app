@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 export const Banner = () => {
   return (
-    <div className="banner">
+    <section className="banner">
       <div className="hero-banner">
         <div className="hero--content">
           <div className="content">
@@ -18,6 +18,6 @@ export const Banner = () => {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
