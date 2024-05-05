@@ -7,6 +7,8 @@ import { Shop } from "./pages/shop/Shop";
 import { Contact } from "./pages/contact/Contact";
 import { WishList } from "./pages/wishList/WishList";
 import { Cart } from "./pages/cart/Cart";
+import "swiper/css";
+
 import {
   MobileHandlerContext,
   MobileHandlerProvider,

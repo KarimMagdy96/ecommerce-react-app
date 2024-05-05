@@ -1,0 +1,16 @@
+.mostSelling {
+  .swiper {
+    overflow: visible;
+  }
+  .swiper--option {
+    width: 100%;
+    background-color: $main-color;
+    height: 4vh;
+    margin-top: 2.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .swiper--arrows {
+    }
+  }
+}
