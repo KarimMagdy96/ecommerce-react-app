@@ -1,0 +1,83 @@
+.shop {
+  .filterCategory--content {
+    position: relative;
+    cursor: pointer;
+    width: fit-content;
+    text-align: center;
+    margin-top: 9.44rem;
+    margin-bottom: 7.6rem;
+    .filter--img {
+      width: 12.5rem;
+      height: 12.5rem;
+
+      border: 6px solid $white-color;
+
+      padding: 0.5rem;
+      border-radius: 50%;
+
+      img {
+        border-radius: 50%;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+    &.active {
+      .filter--img {
+        border-color: $main-color;
+        position: relative;
+        &::after {
+          position: absolute;
+          content: "\2713";
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 3.125rem;
+          height: 3.125rem;
+          background-color: $main-color;
+          border-radius: 50%;
+          right: -0.5rem;
+          top: -0.5rem;
+          font-size: 1.25rem;
+          font-weight: 700;
+        }
+      }
+    }
+    span {
+      margin-top: 2.38rem;
+      display: inline-block;
+      font-size: 1.5rem;
+      font-weight: 600;
+    }
+  }
+  .shop--items {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    // justify-content: space-between;
+    gap: 2.5rem;
+    .card {
+      width: 100%;
+    }
+  }
+}
+@media screen and (min-width: 600px) {
+  .shop {
+    .shop--items {
+      justify-content: center;
+      .card {
+        width: calc(100% / 2 - 2.5rem);
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .shop {
+    .shop--items {
+      .card {
+        width: calc(100% / 3 - 2.5rem);
+      }
+    }
+  }
+}

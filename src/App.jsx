@@ -8,13 +8,13 @@ import { Contact } from "./pages/contact/Contact";
 import { WishList } from "./pages/wishList/WishList";
 import { Cart } from "./pages/cart/Cart";
 import "swiper/css";
-
 import {
   MobileHandlerContext,
   MobileHandlerProvider,
 } from "./utils/mobilHundler";
 import { MobileMenu } from "./components/mobilMenu/MobileMenu";
 import { useContext } from "react";
+import { LoadingPage } from "./components/loader/LoadingPage";
 
 function App() {
   const Routing = createBrowserRouter([
@@ -53,6 +53,7 @@ function App() {
   return (
     <>
       <MobileHandlerProvider>
+        <LoadingPage />
         <RouterProvider router={Routing} />
       </MobileHandlerProvider>
     </>

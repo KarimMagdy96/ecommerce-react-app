@@ -1,0 +1,20 @@
+.breadCrumb {
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.8) 100%), url("../../../../public/images/watchAd.webp");
+  background-position: center center;
+  background-size: cover;
+  border-radius: 1rem;
+  min-height: 50vh;
+  margin-top: 1.56rem;
+  margin-inline: 1.63rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.breadCrumb .breadCrumb--text {
+  font-size: 2rem;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+.breadCrumb .breadCrumb--text .page {
+  opacity: 50%;
+}/*# sourceMappingURL=breadCrumd.css.map */

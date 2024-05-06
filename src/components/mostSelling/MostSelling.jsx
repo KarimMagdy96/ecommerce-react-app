@@ -8,7 +8,7 @@ import { MobileHandlerContext } from "../../utils/mobilHundler";
 export const MostSelling = () => {
   const { isMobile } = useContext(MobileHandlerContext);
   return (
-    <section className="mostSelling">
+    <section className="mostSelling container">
       <HeadLines
         title={"Most Selling"}
         subTitle={"Our Most Selling Products"}
