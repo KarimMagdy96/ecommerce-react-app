@@ -328,6 +328,11 @@
   height: 100%;
 }
 
+@media (max-width: 1024px) {
+  .swiper--option .swiper--progress {
+    width: 1500% !important;
+  }
+}
 .headLines {
   display: flex;
   align-items: center;
